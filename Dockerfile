@@ -16,6 +16,7 @@ ENV SLS_KAFKA_ENDPOINT=cn-hangzhou.log.aliyuncs.com:10012
 ENV ACCESS_KEY_ID=your-access-key-id
 ENV ACCESS_KEY_SECRET=your-access-key-secret
 ENV TOPICS=test
+ENV STDOUT_TAG=*
 
 EXPOSE 24224
 
