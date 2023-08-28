@@ -1,4 +1,4 @@
-FROM fluent/fluent-bit
+FROM bitnami/fluent-bit:2-debian-11
 
 ADD fluent-bit.conf /fluent-bit/etc/
 
@@ -19,4 +19,4 @@ ENV TOPICS=test
 
 EXPOSE 24224
 
-CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf"]
+CMD ["-c", "/fluent-bit/etc/fluent-bit.conf"]
