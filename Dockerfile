@@ -19,4 +19,4 @@ ENV TOPICS=test
 
 EXPOSE 24224
 
-CMD ["-c", "/fluent-bit/etc/fluent-bit.conf"]
+CMD ["/fluent-bit/bin/fluent-bit", "-c", "/fluent-bit/etc/fluent-bit.conf"]
